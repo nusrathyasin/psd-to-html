@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!--Bootstrap library -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      </head>
+ <style>
+body{
+margin:0;
+padding:0;
+min-width:1100px;
+height:100%;
+}
+.header{
+	background-color:#323232;
+}
+.header p{
+	display:inline;
+	color:white;
+	font-size:10px;
+	margin-left:33px;
+	margin-right:38px;
+}
+.header a{
+	text-decoration:none;
+	color:white;
+}
+.header a:active{
+	color:#307062;
+}
+.whom{
+	background-color:#2eb398;
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:13px;
+	padding-bottom:13px;
+	display:flex;
+}
+#dev{
+	padding-left:20px;
+	padding-top:66px;
+	padding-bottom:66px;
+	border-left:1px solid #219d84;
+}
+#about{
+	padding-top:66px;
+	padding-bottom:66px;
+	padding-left:20px;
+	padding-right:20px;
+	border-right:1px solid #219d84;
+	font-style:justify;
+}
+#social{
+	padding-top:64px;
+	float:right;
+	display:flex;
+}
+.getInTouch{
+	background-color:#323232;
+	padding-top:12px;
+	padding-bottom:12px;
+	overflow:hidden;
+	display:block;
+	margin:auto;
+}
+.getInTouch .row{
+	border-top:1px solid #454545;
+	border-bottom:1px solid #454545;
+}
+#info{
+	padding-top:53px;
+	padding-right:120px;
+	padding-left:120px;
+	padding-bottom:65px;
+}
+input[type="text"]{
+	background-color:#454545;
+	color:#7f7f7f;
+	margin-bottom:16px;
+	padding-left:15px;
+}
+#name{
+	width:578px; height:38px;
+	border:1px solid #454545;
+}
+#email{
+	width:578px; height:38px;
+	border:1px solid #454545;
+}
+#subject{
+	width:578px; height:38px;
+	border:1px solid #454545;
+}
+#message{
+	width:578px; height:150px;
+	border:1px solid #454545;
+}
+button{
+	background-color:#2eb398;
+	border:1px solid #2eb398;
+	color:#b4eadf;
+	width:89px; height:37px;
+	margin-left:488px;
+}
+#contact{
+	padding-top:106px;
+	color:#7f7f7f;
+	margin-left:30px;
+	text-align:justify;
+	padding-right:120px;
+}
+#details{
+	padding-top:68px;
+}
+.footer{
+	background-color:#222222;
+	padding-top:14px;
+	height:43px;
+	padding-left:42px;
+}
+</style>
+</head>
+<body>
+	<div class="header">
+		<div class="text-center" >
+		<p ><a href="#" style="color:#307062">PORTFOLIO</a></p>
+		<p><a href="#">ABOUT</a></p>
+		<img src="images/logo.jpg"  width="64" height="53" />
+		<p><a href="#">BLOG</a></p>
+		<p><a href="#">GET IN TOUCH</a></p>
+		</div>
+	</div>
+	<div class="portfolio">
+		<center>
+		<img src="images/hexal_02.jpg" class="img-responsive" width="1020" height="721" />
+		</center> 
+	</div>
+	<div class="whom">
+		<div id="dev">
+			<img src="images/hexal_05.jpg"  width="180" height="208" >
+		</div>
+		<div id="about">
+			<p style="font-size:30px;color:#dafcf6;line-height:23px">Smith Anderson<br>
+<span style="font-size:18px;color:#20816d;line-height:13px">Illustrator & Character Designer</span></p>
+			<p style="font-size:12px;color:#dafcf6;text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
+			<div id="social">
+				<a href="#"><img src="images/hexal_24.jpg"  width="24" height="24" ></a>
+				<a href="#"><img src="images/hexal_25.jpg"  width="24" height="24" ></a>
+				<a href="#"><img src="images/hexal_26.jpg"  width="24" height="24" ></a>
+				<a href="#"><img src="images/hexal_27.jpg"  width="24" height="24" ></a>
+				<a href="#"><img src="images/hexal_28.jpg"  width="24" height="24" ></a>
+				<a href="#"><img src="images/hexal_29.jpg"  width="24" height="24" ></a>
+			</div>
+		</div>
+	</div>
+<div class="getInTouch">
+	<div class="row">
+	<div class="col-md-7 col-sm-12 col-lg-6">
+		<div id="info">
+			<p style="font-size:30px;color:#e0e0e0;line-height:21px">Get In Touch <br> <span style="font-size:18px;color:#7f7f7f">In order to get in touch use the contact form below:</span></p>
+			<input type="text" placeholder="Name(Required)" id="name"><br>
+			<input type="text" placeholder="Email(Required)" id="email"><br>
+			<input type="text" placeholder="Subject" id="subject"><br>
+			<input type="text" placeholder="Write your message here..." id="message"><br>
+			<button>Send</button>
+		</div>
+	</div>
+	<div class="col-md-5 col-sm-12 col-lg-5">
+		<div id="contact">
+			<p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
+			<div id="details">
+				<img src="images/hexal_03.jpg" width="7" height="12"><span style="font-size:12px;padding-left:18px">Elm St. 14/05 Lost City </span><br>
+				<img src="images/phone.jpg" width="11" height="12"><span style="font-size:12px;padding-left:18px">+ 3528 331 86 35  </span><br>
+				<img src="images/mail.jpg" width="13" height="8"><span style="font-size:12px;padding-left:18px">info@hexalcorp.com </span>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<div class="footer">
+		<p>&copy Copyright 2013 by PSDchat</p>
+	</div>
+  </body>
+</html>
