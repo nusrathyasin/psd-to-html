@@ -12,13 +12,17 @@
       </head>
  <style>
 body{
-margin:0;
-padding:0;
-min-width:1100px;
-height:100%;
+	margin:0;
+	padding:0;
 }
 .header{
 	background-color:#323232;
+}
+.bull{
+	margin:0 auto;
+	max-width:1020px;
+	width:96%;
+
 }
 .header p{
 	display:inline;
@@ -34,8 +38,13 @@ height:100%;
 .header a:active{
 	color:#307062;
 }
-.whom{
+#container{
 	background-color:#2eb398;
+}
+.whom{
+	margin:0 auto;
+	max-width:1020px;
+	width:100%;
 	padding-left:100px;
 	padding-right:100px;
 	padding-top:13px;
@@ -61,23 +70,26 @@ height:100%;
 	float:right;
 	display:flex;
 }
-.getInTouch{
+.wrap{
 	background-color:#323232;
-	padding-top:12px;
-	padding-bottom:12px;
-	overflow:hidden;
-	display:block;
-	margin:auto;
 }
-.getInTouch .row{
+
+.getInTouch {
 	border-top:1px solid #454545;
 	border-bottom:1px solid #454545;
+	display:flex;
+	margin:0 auto;
+	width:1020px;
+	
+	padding-top:12px;
+	padding-bottom:12px;
 }
 #info{
 	padding-top:53px;
-	padding-right:120px;
+	//padding-right:120px;
 	padding-left:120px;
 	padding-bottom:65px;
+	width:70%;
 }
 input[type="text"]{
 	background-color:#454545;
@@ -98,8 +110,13 @@ input[type="text"]{
 	border:1px solid #454545;
 }
 #message{
+	background-color:#454545;
+	color:#7f7f7f;
+	margin-bottom:16px;
+	padding-left:15px;
 	width:578px; height:150px;
 	border:1px solid #454545;
+	padding-top:0px !important;
 }
 button{
 	background-color:#2eb398;
@@ -118,17 +135,150 @@ button{
 #details{
 	padding-top:68px;
 }
-.footer{
+.foot{
 	background-color:#222222;
+}
+.footer{
+	
 	padding-top:14px;
 	height:43px;
 	padding-left:42px;
 }
+
+@media screen and (max-width: 1040px) {
+#container{
+overflow:hidden;
+}
+.wrap{
+overflow:hidden;
+}
+
+#contact{
+//padding-right:50px;
+padding-left:0px;
+}
+}
+@media screen and (max-width: 940px) {
+.getInTouch{
+display:block;
+
+}
+#info{
+padding-left:120px;
+}
+#contact{
+padding-left:90px;
+padding-top:0px;
+text-align:justify;
+padding-right:20px;
+width:50%;
+display:flex;
+}
+#details{
+	padding-top:0px;
+	padding-left:50px;
+}
+}
+@media screen and (max-width: 750px) {
+#name,#email,#subject,#message{
+	width:388px;
+}
+button{
+margin-left:298px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.header p{
+	
+	margin-left:20px;
+	margin-right:25px;
+}
+#info{
+padding-left:100px;
+}
+#contact{
+padding-left:70px;
+width:45%;
+}
+#details{
+padding-left:40px;
+}
+}
+@media screen and (max-width: 520px) {
+.header p{
+margin-left:10px;
+margin-right:15px;
+}
+.whom{
+display:block;
+}
+#info{
+padding-left:50px;
+}
+#social{
+padding-top:10px;
+padding-bottom:10px;
+}
+#dev{
+border-left:1px solid #2eb398;
+padding-top:50px;
+padding-bottom:20px;
+}
+#about{
+border-right:1px solid #2eb398;
+padding-top:0px;
+padding-left:10px;
+}
+#name,#email,#subject,#message{
+width:288px;
+}
+button{
+margin-left:198px;
+}
+#contact{
+padding-left:30px;
+width:32%;
+}
+#details{
+padding-left:30px;
+}
+}
+@media screen and (max-width: 415px) {
+.header p{
+margin-left:5px;
+margin-right:10px;
+}
+#info span{
+font-size:12px !important;
+}
+#contact{
+padding-left:20px;
+display:block;
+width:32%;
+}
+}
+@media screen and (max-width: 367px) {
+.header p{
+margin-left:0px;
+margin-right:2px;
+}
+#name,#email,#subject,#message{
+width:200px;
+}
+button{
+margin-left:100px;
+}
+#contact{
+padding-left:10px;
+width:25%;
+}
+}
 </style>
 </head>
 <body>
-	<div class="header">
-		<div class="text-center" >
+		<div class="header">
+		<div class="text-center bull" >
 		<p ><a href="#" style="color:#307062">PORTFOLIO</a></p>
 		<p><a href="#">ABOUT</a></p>
 		<img src="images/logo.jpg"  width="64" height="53" />
@@ -136,12 +286,14 @@ button{
 		<p><a href="#">GET IN TOUCH</a></p>
 		</div>
 	</div>
-	<div class="portfolio">
+	<div class="portfolio bull">
 		<center>
-		<img src="images/hexal_02.jpg" class="img-responsive" width="1020" height="721" />
+		<img src="images/hexal_02.jpg" class="img-responsive"  >
 		</center> 
 	</div>
-	<div class="whom">
+	<div id="container" >
+	<div class="whom ">
+	
 		<div id="dev">
 			<img src="images/hexal_05.jpg"  width="180" height="208" >
 		</div>
@@ -158,33 +310,34 @@ button{
 				<a href="#"><img src="images/hexal_29.jpg"  width="24" height="24" ></a>
 			</div>
 		</div>
+		</div>
 	</div>
-<div class="getInTouch">
-	<div class="row">
-	<div class="col-md-7 col-sm-12 col-lg-6">
-		<div id="info">
-			<p style="font-size:30px;color:#e0e0e0;line-height:21px">Get In Touch <br> <span style="font-size:18px;color:#7f7f7f">In order to get in touch use the contact form below:</span></p>
+	<div class="wrap">
+		<div class="getInTouch">
+			<div id="info">
+			<p style="font-size:30px;color:#e0e0e0;line-height:21px">Get In Touch <br> <span style="font-size:16px;color:#7f7f7f;">In order to get in touch use the contact form below:</span></p>
 			<input type="text" placeholder="Name(Required)" id="name"><br>
 			<input type="text" placeholder="Email(Required)" id="email"><br>
 			<input type="text" placeholder="Subject" id="subject"><br>
-			<input type="text" placeholder="Write your message here..." id="message"><br>
+			<textarea placeholder="Write your message here..."  id="message"></textarea><br>
 			<button>Send</button>
 		</div>
-	</div>
-	<div class="col-md-5 col-sm-12 col-lg-5">
+	
 		<div id="contact">
-			<p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
+			<p style="font-size:12px">Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
 			<div id="details">
 				<img src="images/hexal_03.jpg" width="7" height="12"><span style="font-size:12px;padding-left:18px">Elm St. 14/05 Lost City </span><br>
 				<img src="images/phone.jpg" width="11" height="12"><span style="font-size:12px;padding-left:18px">+ 3528 331 86 35  </span><br>
 				<img src="images/mail.jpg" width="13" height="8"><span style="font-size:12px;padding-left:18px">info@hexalcorp.com </span>
-			</div>
-		</div>
+			
 	</div>
 	</div>
 	</div>
-	<div class="footer">
+	</div>
+	<div class="foot">
+	<div class="footer bull">
 		<p>&copy Copyright 2013 by PSDchat</p>
+	</div>
 	</div>
   </body>
 </html>
